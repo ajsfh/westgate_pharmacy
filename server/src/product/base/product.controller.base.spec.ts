@@ -24,7 +24,6 @@ const CREATE_INPUT = {
   title: "exampleTitle",
   titlePrice: 42.42,
   updatedAt: new Date(),
-  variance: "exampleVariance",
 };
 const CREATE_RESULT = {
   createdAt: new Date(),
@@ -33,7 +32,6 @@ const CREATE_RESULT = {
   title: "exampleTitle",
   titlePrice: 42.42,
   updatedAt: new Date(),
-  variance: "exampleVariance",
 };
 const FIND_MANY_RESULT = [
   {
@@ -43,7 +41,6 @@ const FIND_MANY_RESULT = [
     title: "exampleTitle",
     titlePrice: 42.42,
     updatedAt: new Date(),
-    variance: "exampleVariance",
   },
 ];
 const FIND_ONE_RESULT = {
@@ -53,7 +50,6 @@ const FIND_ONE_RESULT = {
   title: "exampleTitle",
   titlePrice: 42.42,
   updatedAt: new Date(),
-  variance: "exampleVariance",
 };
 
 const service = {

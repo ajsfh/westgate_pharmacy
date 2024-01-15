@@ -128,14 +128,13 @@ class ProductUpdateInput {
 
   @ApiProperty({
     required: false,
-    type: String,
   })
-  @IsString()
+  @IsJSONValue()
   @IsOptional()
-  @Field(() => String, {
+  @Field(() => GraphQLJSON, {
     nullable: true,
   })
-  variance?: string;
+  variance?: InputJsonValue;
 }
 
 export { ProductUpdateInput as ProductUpdateInput };

@@ -16,5 +16,5 @@ export type ProductWhereInput = {
   reviews?: ReviewListRelationFilter;
   title?: StringFilter;
   titlePrice?: FloatFilter;
-  variance?: StringFilter;
+  variance?: JsonFilter;
 };

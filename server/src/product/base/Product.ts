@@ -76,13 +76,10 @@ class Product {
   id!: string;
 
   @ApiProperty({
-    required: false,
+    required: true,
   })
   @IsJSONValue()
-  @IsOptional()
-  @Field(() => GraphQLJSON, {
-    nullable: true,
-  })
+  @Field(() => GraphQLJSON)
   images!: JsonValue;
 
   @ApiProperty({
@@ -129,11 +126,10 @@ class Product {
 
   @ApiProperty({
     required: true,
-    type: String,
   })
-  @IsString()
-  @Field(() => String)
-  variance!: string;
+  @IsJSONValue()
+  @Field(() => GraphQLJSON)
+  variance!: JsonValue;
 }
 
 export { Product as Product };

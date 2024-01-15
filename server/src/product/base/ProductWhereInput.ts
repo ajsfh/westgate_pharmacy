@@ -137,14 +137,14 @@ class ProductWhereInput {
 
   @ApiProperty({
     required: false,
-    type: StringFilter,
+    type: JsonFilter,
   })
-  @Type(() => StringFilter)
+  @Type(() => JsonFilter)
   @IsOptional()
-  @Field(() => StringFilter, {
+  @Field(() => JsonFilter, {
     nullable: true,
   })
-  variance?: StringFilter;
+  variance?: JsonFilter;
 }
 
 export { ProductWhereInput as ProductWhereInput };

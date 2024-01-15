@@ -13,5 +13,5 @@ export type ProductUpdateInput = {
   reviews?: ReviewUpdateManyWithoutProductsInput;
   title?: string;
   titlePrice?: number;
-  variance?: string;
+  variance?: InputJsonValue;
 };
