@@ -55,12 +55,15 @@ class User {
   id!: string;
 
   @ApiProperty({
-    required: true,
+    required: false,
     type: Boolean,
   })
   @IsBoolean()
-  @Field(() => Boolean)
-  isAdmin!: boolean;
+  @IsOptional()
+  @Field(() => Boolean, {
+    nullable: true,
+  })
+  isAdmin!: boolean | null;
 
   @ApiProperty({
     required: false,

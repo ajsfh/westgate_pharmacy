@@ -56,11 +56,9 @@ export class ReviewControllerBase {
             }
           : undefined,
 
-        user: data.user
-          ? {
-              connect: data.user,
-            }
-          : undefined,
+        user: {
+          connect: data.user,
+        },
       },
       select: {
         createdAt: true,
@@ -195,11 +193,9 @@ export class ReviewControllerBase {
               }
             : undefined,
 
-          user: data.user
-            ? {
-                connect: data.user,
-              }
-            : undefined,
+          user: {
+            connect: data.user,
+          },
         },
         select: {
           createdAt: true,

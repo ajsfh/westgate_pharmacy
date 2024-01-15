@@ -62,14 +62,11 @@ class ProductCreateInput {
   discountedPrice!: number;
 
   @ApiProperty({
-    required: false,
+    required: true,
   })
   @IsJSONValue()
-  @IsOptional()
-  @Field(() => GraphQLJSON, {
-    nullable: true,
-  })
-  images?: InputJsonValue;
+  @Field(() => GraphQLJSON)
+  images!: InputJsonValue;
 
   @ApiProperty({
     required: false,
@@ -113,11 +110,10 @@ class ProductCreateInput {
 
   @ApiProperty({
     required: true,
-    type: String,
   })
-  @IsString()
-  @Field(() => String)
-  variance!: string;
+  @IsJSONValue()
+  @Field(() => GraphQLJSON)
+  variance!: InputJsonValue;
 }
 
 export { ProductCreateInput as ProductCreateInput };

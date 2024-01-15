@@ -8,10 +8,10 @@ export type ProductCreateInput = {
   color: InputJsonValue;
   description: InputJsonValue;
   discountedPrice: number;
-  images?: InputJsonValue;
+  images: InputJsonValue;
   orders?: OrderCreateNestedManyWithoutProductsInput;
   reviews?: ReviewCreateNestedManyWithoutProductsInput;
   title: string;
   titlePrice: number;
-  variance: string;
+  variance: InputJsonValue;
 };

@@ -49,7 +49,7 @@ export const ProductEdit = (props: EditProps): React.ReactElement => {
         </ReferenceArrayInput>
         <TextInput label="title" source="title" />
         <NumberInput label="titlePrice" source="titlePrice" />
-        <TextInput label="variance" source="variance" />
+        <div />
       </SimpleForm>
     </Edit>
   );

@@ -15,7 +15,7 @@ import { StringNullableFilter } from "../../util/StringNullableFilter";
 import { Type } from "class-transformer";
 import { IsOptional, ValidateNested } from "class-validator";
 import { StringFilter } from "../../util/StringFilter";
-import { BooleanFilter } from "../../util/BooleanFilter";
+import { BooleanNullableFilter } from "../../util/BooleanNullableFilter";
 import { OrderListRelationFilter } from "../../order/base/OrderListRelationFilter";
 import { ReviewListRelationFilter } from "../../review/base/ReviewListRelationFilter";
 
@@ -45,14 +45,14 @@ class UserWhereInput {
 
   @ApiProperty({
     required: false,
-    type: BooleanFilter,
+    type: BooleanNullableFilter,
   })
-  @Type(() => BooleanFilter)
+  @Type(() => BooleanNullableFilter)
   @IsOptional()
-  @Field(() => BooleanFilter, {
+  @Field(() => BooleanNullableFilter, {
     nullable: true,
   })
-  isAdmin?: BooleanFilter;
+  isAdmin?: BooleanNullableFilter;
 
   @ApiProperty({
     required: false,

@@ -16,5 +16,5 @@ export type Product = {
   title: string;
   titlePrice: number;
   updatedAt: Date;
-  variance: string;
+  variance: JsonValue;
 };

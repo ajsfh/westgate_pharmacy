@@ -46,7 +46,7 @@ class UserUpdateInput {
   @Field(() => Boolean, {
     nullable: true,
   })
-  isAdmin?: boolean;
+  isAdmin?: boolean | null;
 
   @ApiProperty({
     required: false,

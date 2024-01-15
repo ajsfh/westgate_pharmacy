@@ -4,7 +4,7 @@ import { InputJsonValue } from "../../types";
 
 export type UserCreateInput = {
   firstName?: string | null;
-  isAdmin: boolean;
+  isAdmin?: boolean | null;
   lastName?: string | null;
   orders?: OrderCreateNestedManyWithoutUsersInput;
   password: string;

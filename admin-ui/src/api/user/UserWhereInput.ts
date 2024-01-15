@@ -1,13 +1,13 @@
 import { StringNullableFilter } from "../../util/StringNullableFilter";
 import { StringFilter } from "../../util/StringFilter";
-import { BooleanFilter } from "../../util/BooleanFilter";
+import { BooleanNullableFilter } from "../../util/BooleanNullableFilter";
 import { OrderListRelationFilter } from "../order/OrderListRelationFilter";
 import { ReviewListRelationFilter } from "../review/ReviewListRelationFilter";
 
 export type UserWhereInput = {
   firstName?: StringNullableFilter;
   id?: StringFilter;
-  isAdmin?: BooleanFilter;
+  isAdmin?: BooleanNullableFilter;
   lastName?: StringNullableFilter;
   orders?: OrderListRelationFilter;
   reviews?: ReviewListRelationFilter;
